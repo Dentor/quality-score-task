@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+        <title>Quality Score Task</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="left-flower">&nbsp;</div>
+            <div class="right-flower">&nbsp;</div>
+            <div class="product-wrap">
+                <h1>CHOOSE YOUR PACKAGE</h1>
+                <div class="annount-select-wrap">
+                    <div class="ammount-box" onclick="annount(1, event)">1</div>
+                    <div class="ammount-box box-selected" onclick="annount(3, event)">3</div>
+                    <div class="ammount-box" onclick="annount(6, event)">6</div>
+                </div>
+                <div class="type-select-wrap">
+                    <div class="subscribe-box box-selected" onclick="subscribe(false, event)">One-Time Purchase</div>
+                    <div class="subscribe-box" onclick="subscribe(true, event)">Subscribe & Save More</div>
+                </div>
+                <div class="subscribtion-box">
+                    <div class="check-box" onclick="checkToggle()">
+                        Yes! I want to Subscribe & Save
+                    </div>
+                    <div class="subscribtion-text">
+                        By checking the "Yes" box above, you agree to receive "Dermal Repair Complex" once per month and that your credit card will be charged the amount matching your selected package size, billed to your card as "Beverly Hills MD". You can stop shipments anytime by calling customer service at <a href="tel:877-828-5528">(877) 828-5528 </a>from 6am to 6pm PST. (<a href="https://beverlyhillsmd.com/terms-and-condition/" target="_blank">All terms and conditions apply</a>)
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-image product-ammount-3">
+                        <div class="product-stamp pink-stomp">Best <br> Seller</div>
+                    </div>
+                    <div class="product-information">
+                        <h3 class="final-price">$102.00</h3>
+                        <p>Retail Price <span class="retail-price red">$174.00</span></p>
+                        <p>Instant Savings <span class="saving-price green" >$72.00</span></p>
+                        <p>FREE US SHIPPING</p>
+                    </div>
+                    <div onclick="buyEvent()" class="cta">BUY NOW</div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="max-size-360">
+                    <div class="footer-icons-wrap">
+                        <div class="footer-icons flag">Manufactured in USA</div> 
+                        <div class="footer-icons truk">Door to door</div> 
+                    </div>
+                    <div class="days-icon">
+                        <h3>90 DAY</h3>
+                        <p>MONEY BACK GUARANTEE</p>
+                    </div> 
+                </div>
+                <div class="footer-text">
+                    <p class="green">Your order is backed by our 90-day money-back guarantee.</p>
+                    <p>We are confident you'll love it. So if you're not completely satisfied for any reason, just send it back for a full refund!</p>
+                    <p class="gray">(Not including return shipping)</p>
+                </div>
+            </div>
+        </div>
+        <script src="global.js"></script>
+    </body>
+</html>
